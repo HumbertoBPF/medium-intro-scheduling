@@ -62,3 +62,9 @@ class Job:
             return NotImplemented
 
         return self.job_id < other.job_id
+
+    def __str__(self):
+        return f"Job ID: {self.job_id} - Execution time: {self.execution_time} - Arriving time: {self.arriving_time}"
+
+    def __repr__(self):
+        return f"Job ID: {self.job_id} - Execution time: {self.execution_time} - Arriving time: {self.arriving_time}"
